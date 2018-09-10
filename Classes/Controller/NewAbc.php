@@ -1,5 +1,7 @@
 <?php
-/**
+namespace Testing\AbcTest\Controller;
+
+/*
  * This file is part of the TYPO3 CMS project.
  *
  * It is free software; you can redistribute it and/or modify it under
@@ -12,11 +14,9 @@
  * The TYPO3 project - inspiring people to share!
  */
 
-
-class tx_abctest_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
+class NewAbc extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
 {
     public $prefixId      = 'tx_abctest_pi1';        // Same as class name
-    public $scriptRelPath = 'pi1/class.tx_abctest_pi1.php';    // Path to this script relative to the extension dir.
     public $extKey        = 'abc_test';    // The extension key.
     public $pi_checkCHash = false;
 
@@ -30,9 +30,7 @@ class tx_abctest_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
      */
     public function main($content, $conf)
     {
-
-       debug($this->cObj->data);
-
+        debug($this->cObj->data);
         return $this->pi_wrapInBaseClass($content);
     }
 

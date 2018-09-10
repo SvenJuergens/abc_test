@@ -14,7 +14,7 @@ $EM_CONF[$_EXTKEY] = [
     'title' => 'ACB test',
     'description' => 'abc test',
     'category' => 'plugin',
-    'version' => '1.0.0',
+    'version' => '2.0.0',
     'constraints' => [
         'depends' => [
         ],
@@ -22,8 +22,5 @@ $EM_CONF[$_EXTKEY] = [
         ],
         'suggests' => [
         ],
-    ],
-    'autoload' =>[
-        'classmap' => ['pi1']
-    ],
+    ]
 ];
